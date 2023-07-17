@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav1{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+     
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(MANMUN-PRIVATE-LIMITED.jpeg);
+    background-size: 100% 100%;
+}
+.h-text{
+    max-width: 600px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.h-text h1{
+font-size: 3em;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.h-text span{
+    color: #e67e22;
+}
+.h-text p{
+    font-size: 20px;
+    margin: 40px 0;
+    line-height: 30px;
+    color: white;
+}
+.h-text a{
+    text-decoration: none;
+    color: white;
+    background: #e67e22;
+    padding: 10px 20px;
+    margin: 0 10px;
+    width: 0;
+}
+.menu a:hover{
+    color: #e67e22;
+    
+}
+.menu a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e67e22;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+}
+.menu a:hover::after{
+    width: 100%;
+}
+.h-text:hover{
+    width: 100%;
+    border: none;
+}
+.h-text:hover::after{
+    color: white;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script>  
+        function matchPassword() {  
+          var pw1 = document.getElementById("Password");  
+          var pw2 = document.getElementById("Confirm pass");
+          if(pw1 != pw2)  
+          {   
+            alert("Passwords  match");  
+          } else {  
+            alert("password did not matched");  
+          }  
+        }  
+        </script> 
+</head>
+<body>
+    <nav class="nav1">
+        <div>
+            <img src="logo.jpg">
+        </div>
+        <div class="menu">
+            <a href="manmun.html">HOME</a>
+            <a href="#">CONTACT</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">SERVICES</a>
+            <a href="#">SINGIN</a>
+            <a href="#">SIGNUP</a>
+        </div>
+    <div class="center">
+        <h1>REGISTRATION</h1>
+         <form action="connect.php" method="post">
+            <div class="txt_field">
+                <input type="text" name="name" required>
+                <label>Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="mobile" required>
+                <label>Mobile</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" id="password" name="password" required>
+                <label>Password</label>
+            </div>
+            
+             
+         <div class="txt_field">
+                    <input type="password" id="confirm pass" name="confirmpass" required>
+                    <label> Confirm pass</label>
+                </div>
+          
+                <input type="submit" value="Register" onclick="matchPassword1()">
+                  
+                 
+                <div class="signup_link">
+                 <a href="rummypage.html">login</a>
+                </div>
+    
+
+        </form>
+    </div>
+    
+</body>
+</html>
